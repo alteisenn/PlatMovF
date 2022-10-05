@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-    <link rel="icon" href="favicon.ico"/>
+<head>
+    <link rel="icon" href="assets/favicon.ico"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
 
-    <title>Search Movie</title>
+    <title>WatchList</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="./watchlist.html" target="_blank" class="watchlist-link">Watchlist</a></li>
+                <li><a href="./search.html" target="_blank" class="search-link">Search</a></li>
             </ul>
 
             <div class="burger">
@@ -31,22 +31,16 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <div class="search">
-            <p>Search for a Movie</p>
-
-            <form id="searchForm">
-                <input type="text" placeholder="Search here..." id="searchInput" autocomplete="off">
-            </form>
-        </div>
+    <div class="watchSection">
+        <h2>WatchList</h2>    
     </div>
 
-    <div class="result">
-
+    <div class="watchHR">
+        <hr>
     </div>
-    
-    <div class="pagination">
 
+    <div class="watchlist">
+        <p>Your watchlist is empty!</p>
     </div>
 
     <footer class="footer">
@@ -60,12 +54,7 @@
     <script src="./main.js"></script>
 
     <script>
-        $(document).ready( () => {
-            $('.pagination').hide();
-        });
-        window.load = function() {
-            $('.pagination').hide();
-        }
+       showWatchlist();
     </script>
 
 </body>

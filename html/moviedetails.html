@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="assets/favicon.ico"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
 
-    <title>WatchList</title>
+    <title>Movie Details</title>
 </head>
 
 <body>
@@ -16,11 +16,13 @@
     <nav>
         <div class="nav">
             <div class="logo">
-                <a href="./index.html"><span class="blue">M</span>ovie<span class="blue">M</span>ania</a>
+                <a href="./index.html"><span class="blue">P</span>elis<span class="blue">G</span>ordi</a>
             </div>
 
             <ul class="nav-links">
                 <li><a href="./search.html" target="_blank" class="search-link">Search</a></li>
+
+                <li><a href="./watchlist.html" target="_blank" class="watchlist-link">Watchlist</a></li>
             </ul>
 
             <div class="burger">
@@ -31,16 +33,29 @@
         </div>
     </nav>
 
-    <div class="watchSection">
-        <h2>WatchList</h2>    
+    <div class="movieContainer">
+
     </div>
 
-    <div class="watchHR">
-        <hr>
+    <div class="rrbuttons">
+        <button class="reviewButton" onclick="showHideReview()">Show Reviews</button>
+        <button class="recommButton" onclick="showHideRecomm()">Show Recommendations</button>
     </div>
 
-    <div class="watchlist">
-        <p>Your watchlist is empty!</p>
+    <div class="recommendations hideRecomm">
+        <div class="recommTitle">Recommendations:</div>
+
+        <hr class="recommHR">
+    
+        <div class="movieRecommendations"></div>
+    </div>
+    
+    <div class="reviews hideReview">
+        <div class="reviewTitle">Reviews:</div>
+
+        <hr class="reviewHR">
+
+        <div class="movieReviews"></div>
     </div>
 
     <footer class="footer">
@@ -54,7 +69,11 @@
     <script src="./main.js"></script>
 
     <script>
-       showWatchlist();
+        $(document).ready(() => {
+            getMovieDetails();
+            getMovieRecommendations();
+            getMovieReviews();
+        });
     </script>
 
 </body>
