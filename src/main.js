@@ -169,12 +169,12 @@ function nextBtn() {
 
 function selectedMovie(movie_id) {
     sessionStorage.setItem('movieId', movie_id);
-    window.location = './moviedetails.html';
+    window.location = 'src/moviedetails.html';
 }
 
 function selectedTV(tv_id) {
     sessionStorage.setItem('TVId', tv_id);
-    window.location = './tvdetails.html';
+    window.location = 'src/tvdetails.html';
 }
 
 function getMovieDetails(){
