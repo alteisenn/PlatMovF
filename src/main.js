@@ -1,4 +1,4 @@
-const API_KEY = '1a111e9188fd85eb9907b20b4480fe3a'; 
+const API_KEY = 'e02bb07d813f5255844c6d19ab9395ab'; 
 
 let baseURL = 'https://api.themoviedb.org/3/';
 let imageURL = 'https://image.tmdb.org/t/p/w300';
@@ -169,12 +169,12 @@ function nextBtn() {
 
 function selectedMovie(movie_id) {
     sessionStorage.setItem('movieId', movie_id);
-    window.location = '/moviedetails.html';
+    window.location = '/src/moviedetails.html';
 }
 
 function selectedTV(tv_id) {
     sessionStorage.setItem('TVId', tv_id);
-    window.location = '/tvdetails.html';
+    window.location = '/src/tvdetails.html';
 }
 
 function getMovieDetails(){
