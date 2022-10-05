@@ -11,4 +11,4 @@
 ## Resources
 
 - <a href='https://www.themoviedb.org/' target="_blank"><img alt='The Movie Database' src='https://img.shields.io/badge/The_Movie Database-100000?style=for-the-badge&logo=The Movie Database&logoColor=FFFFFF&labelColor=1A0F59&color=1A0F59'/></a>
-- [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://www.yogihosting.com/implement-tmdb-api-with-jquery-ajax/)
+- [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/questions/53769744/tmdb-api-using-jquery-to-get-film-genres-and-images)
