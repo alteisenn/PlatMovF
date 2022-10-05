@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <title>Trending</title>
+    <title>TV Show Details</title>
 </head>
 
 <body>
@@ -33,38 +33,29 @@
         </div>
     </nav>
 
-    <div class="browse">
-        <h2>Trending</h2>
+    <div class="movieContainer">
 
-        <div class="section">
-            <form id="type-form">
-                <label>Type:</label>
-                    <select name="type" id="type" onchange="movieType(this)">
-                        <option value="all" selected>All</option>
-                        <option value="movie">Movie</option>
-                        <option value="tv">TV</option>
-                        <option value="person">Person</option>
-                    </select>
-            </form>
-            
-            &nbsp;&nbsp;
-            
-            <form id="time-form">
-                <label>Time:</label>
-                    <select name="time" id="time" onchange="movieTime(this)">
-                        <option value="day" selected>Day</option>
-                        <option value="week">Week</option>
-                    </select>
-            </form>
-        </div>
     </div>
 
-    <div class="browseHR">
-        <hr>
+    <div class="rrbuttons">
+        <button class="reviewButton" onclick="showHideReview()">Show Reviews</button>
+        <button class="recommButton" onclick="showHideRecomm()">Show Recommendations</button>
     </div>
 
-    <div class="showTrending">
+    <div class="recommendations hideRecomm">
+        <div class="recommTitle">Recommendations:</div>
 
+        <hr class="recommHR">
+    
+        <div class="movieRecommendations"></div>
+    </div>
+    
+    <div class="reviews hideReview">
+        <div class="reviewTitle">Reviews:</div>
+
+        <hr class="reviewHR">
+
+        <div class="movieReviews"></div>
     </div>
 
     <footer class="footer">
@@ -75,7 +66,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            getTVdetails();
+            getTVrecommendations();
+            getTVreviews();
+        });
+    </script>
 
 </body>
 </html>
