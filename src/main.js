@@ -1,5 +1,6 @@
+// NOTE - Key de usuario nesesaria de la api
 const API_KEY = 'e02bb07d813f5255844c6d19ab9395ab'; 
-
+// NOTE - declaración de los url
 let baseURL = 'https://api.themoviedb.org/3/';
 let imageURL = 'https://image.tmdb.org/t/p/w300';
 let recommImageURL = 'https://image.tmdb.org/t/p/w185';
@@ -12,7 +13,7 @@ $(document).ready(() => {
     sessionStorage.removeItem('category');
 
     showMovieByCategory('upcoming');
-
+    // NOTE - Buscador    
     $('#searchForm').on('submit', (e) => {
         let searchText = $('#searchInput').val();
 
@@ -37,7 +38,7 @@ $(document).ready(() => {
 
     navShow();
 });
-
+// NOTE - Obteniendo las peliculas
 function getMovies(searchText, page=1) {
     let url = `${baseURL}search/movie?api_key=${API_KEY}&query=${searchText}&language=en-US&include_adult=false&page=${page}`;
 
@@ -91,7 +92,7 @@ function getMovies(searchText, page=1) {
         }
     }); 
 }
-
+// NOTE - Obteniendo la paginación
 function getPagination(currentPage, totalPages) {
     if(totalPages == 0) {
         $('.pagination').hide();
@@ -166,17 +167,17 @@ function nextBtn() {
         }
     }
 }
-
+//FIXME - selectedMovie
 function selectedMovie(movie_id) {
     sessionStorage.setItem('movieId', movie_id);
     window.location = '../src/moviedetails.html';
 }
-
+//FIXME - selectedTV
 function selectedTV(tv_id) {
     sessionStorage.setItem('TVId', tv_id);
     window.location = '../src/tvdetails.html';
 }
-
+// NOTE - Obteniendo los detalles de las peliculas
 function getMovieDetails(){
     let movie_id = sessionStorage.getItem('movieId');
     
@@ -268,7 +269,7 @@ function getMovieDetails(){
         }
     });
 }
-
+//NOTE - Obteniendo los detalles de programas TV
 function getTVdetails() {
     let tv_id = sessionStorage.getItem('TVId');
 
@@ -356,7 +357,7 @@ function getTVdetails() {
         }
     });
 }
-
+// NOTE - Añadiendo watchlist
 function addToWatch(movie_name, movie_id) {
     localStorage.setItem(movie_name, movie_id);
 
@@ -364,7 +365,7 @@ function addToWatch(movie_name, movie_id) {
     watched.classList.add('watched');
     watched.innerText = 'Added to Watchlist';
 }
-
+// NOTE - Visualización de la watchlist
 function showWatchlist() {
     for(let name of Object.keys(localStorage)) {
         let movie_id = localStorage.getItem(name);
@@ -402,12 +403,12 @@ function showWatchlist() {
         });
     }
 }
-
+// NOTE - Removiendo de la watchlist
 function removeFromWatched(title) {
     localStorage.removeItem(title);
     window.location.reload();
 }
-
+// FIXME - getCastCrew
 function getCastCrew(movie_id) {
     let url = `${baseURL}movie/${movie_id}/credits?api_key=${API_KEY}&language=en-US`;
 
@@ -488,7 +489,7 @@ function getCastCrew(movie_id) {
         }
     });
 }
-
+// FIXME - getTVcast
 function getTVcast(tv_id) {
     let url = `${baseURL}tv/${tv_id}/credits?api_key=${API_KEY}&language=en-US`;
 
@@ -568,7 +569,7 @@ function getTVcast(tv_id) {
         }
     });
 }
-
+// NOTE - Obteniendo las recomendación de peliculas.
 function getMovieRecommendations() {
     let movie_id = sessionStorage.getItem('movieId');
 
@@ -603,7 +604,7 @@ function getMovieRecommendations() {
         }
     });
 }
-
+// NOTE - Obteniendo las recomendaciónes de TV.
 function getTVrecommendations() {
     let tv_id = sessionStorage.getItem('TVId');
 
@@ -638,7 +639,7 @@ function getTVrecommendations() {
         }
     });
 }
-
+// NOTE - Obteniendo las Reviews de la pelicula.
 function getMovieReviews() {
     let movie_id = sessionStorage.getItem('movieId');
 
@@ -682,7 +683,7 @@ function getMovieReviews() {
         }
     });
 }
-
+// NOTE - Obteniendo las reviews de TV.
 function getTVreviews() {
     let tv_id = sessionStorage.getItem('TVId');
 
@@ -726,7 +727,7 @@ function getTVreviews() {
         }
     });
 }
-
+// NOTE - Ocultando o mostrando recomendaciones
 function showHideRecomm() {
     //Show Recommendations first
     $('.reviews').insertAfter('.recommendations');
@@ -741,7 +742,7 @@ function showHideRecomm() {
         recommText.innerHTML = 'Show Recommendations';
     }
 }
-
+// NOTE - Ocultando o mostrando las reviews
 function showHideReview() {
     // Show Reviews first
     $('.recommendations').insertAfter('.reviews');
@@ -756,7 +757,7 @@ function showHideReview() {
         reviewText.innerHTML = 'Show Reviews';
     }
 }
-
+// NOTE - Buscar las peliculas segun el genero
 function movieGenre(selectedGenre) {
     let url = `${baseURL}genre/movie/list?api_key=${API_KEY}&language=en-US`;
     
@@ -777,7 +778,7 @@ function movieGenre(selectedGenre) {
         }
     });
 }
-
+// NOTE - Mostrar las peliculas segun el genero
 function showMovieByGenre(genre_id, page=1) {
     let url = `${baseURL}discover/movie?api_key=${API_KEY}&with_genres=${genre_id}&language=en-US&sort_by=popularity.desc&include_adult=false&page=${page}`;
 
@@ -825,7 +826,7 @@ function showMovieByGenre(genre_id, page=1) {
         }
     });
 }   
-
+// NOTE - Mostrando la tendencia.
 function movieCategory(selectedCategory) {
     let appendToURL = '';
 
@@ -847,7 +848,7 @@ function movieCategory(selectedCategory) {
     showMovieByCategory(appendToURL);
     document.querySelector('.changeTitle').innerHTML = selectedCategory.options[selectedCategory.selectedIndex].text;
 }
-
+// NOTE - Mostrar las peliculas segun la categoria
 function showMovieByCategory(category, page=1) {
     let url = `${baseURL}movie/${category}?api_key=${API_KEY}&language=en-US&include_adult=false&page=${page}`;
 
@@ -894,7 +895,7 @@ function showMovieByCategory(category, page=1) {
         }
     });
 }
-
+// NOTE - Filtro Segun el tipo
 function movieType(selectedType) {
     let time = sessionStorage.getItem('time');
     let appendType = '';
@@ -919,7 +920,7 @@ function movieType(selectedType) {
     sessionStorage.setItem('type', appendType);
     showMovieByTypeTime(appendType, time);
 }
-
+// NOTE - Filtro del tiempo.
 function movieTime(selectedTime) {
     let type = sessionStorage.getItem('type');
     let appendTime = '';
@@ -938,7 +939,7 @@ function movieTime(selectedTime) {
     sessionStorage.setItem('time', appendTime);
     showMovieByTypeTime(type, appendTime);
 }
-
+// NOTE - Mostrando las peliculas segun el tiempo y el tipo.
 function showMovieByTypeTime(appendType, appendTime, page=1) {
     let url = `${baseURL}trending/${appendType}/${appendTime}?api_key=${API_KEY}&include_adult=false&page=${page}`;
 

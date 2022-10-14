@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- LINK - Favicon -->
     <link rel="icon" href="../assets/favicon.ico"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK - CSS -->
     <link rel="stylesheet" href="./style.css">
 
     <title>TV Show Details</title>
 </head>
 
 <body>
-
+    <!-- NOTE - Navbar -->
     <nav>
         <div class="nav">
             <div class="logo">
@@ -31,16 +33,16 @@
             </div>
         </div>
     </nav>
-
+    <!-- NOTE - Contenedor de peliculas -->
     <div class="movieContainer">
 
     </div>
-
+    <!-- NOTE - Botones para ver las reviews y|o recomendaciones -->
     <div class="rrbuttons">
         <button class="reviewButton" onclick="showHideReview()">Show Reviews</button>
         <button class="recommButton" onclick="showHideRecomm()">Show Recommendations</button>
     </div>
-
+    <!-- NOTE - Contenedor de las recomendaciones -->
     <div class="recommendations hideRecomm">
         <div class="recommTitle">Recommendations:</div>
 
@@ -48,7 +50,7 @@
     
         <div class="movieRecommendations"></div>
     </div>
-    
+    <!-- NOTE - Contenedor de las reviews     -->
     <div class="reviews hideReview">
         <div class="reviewTitle">Reviews:</div>
 
@@ -56,15 +58,15 @@
 
         <div class="movieReviews"></div>
     </div>
-
+    <!-- NOTE - Footer -->
     <footer class="footer">
         &lt;/&gt; lincNx
     </footer>
 
-    <!-- jQuery minified CDN -->
+    <!-- LINK - jQuery minified CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Custom JS -->
+    <!-- LINK - Custom JS -->
     <script src="./main.js"></script>
 
     <script>
