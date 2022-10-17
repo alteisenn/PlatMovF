@@ -4,7 +4,7 @@
 
 ## Intro
 
-- Aplicacion de Informacion de peliculas desarrollada para la materia de de Plataformas Moviles
+- Aplicacion de peliculas desarrollada para la materia de de Plataformas Moviles
 
 
 ## Codigo
