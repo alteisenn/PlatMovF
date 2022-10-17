@@ -26,3 +26,5 @@
 - Diseño Responsivo
 - Datos llamados por una API
 - Publicado en la web
+
+Fecha: 7/11/22 (Cambiante)
