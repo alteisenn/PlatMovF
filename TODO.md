@@ -13,3 +13,14 @@
 - [x] Definir cual sera el proyecto 
 - [x] Definir que API usaremos para la pagina 
 - [x] Definir que funcionalidades queremos para la pagina 
+
+
+
+## Funcionalidades a implementar 
+
+- Filtrar peliculas por categorias (Accion,Drama,Terror, ETC)
+- Capacidad de buscar peliculas en base al nombre
+- Mostrar peliculas mas populares en una ventana de tendencias
+- Una watchlist para guardar peliculas de interes 
+- Mostrar Detalles generales, cast, staff y tambien el plot del show/pelicula.
+- Mostrar tambien, Reviews y Recomendaciones de Peliiculas/Shows relacionadas.
