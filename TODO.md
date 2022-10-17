@@ -3,6 +3,7 @@
 ## Tareas por realizar
 ❔ Planificar y dividir las tareas 
 - [ ] Investigar sobre el funcionamiento de la TMDB API
+- [ ] Corroborar que la API servira para el desarrollo de la pagina 
 - [ ] Crear la estructura HTML de la pagina
 - [ ] Crear la estructura del CSS de la pagina
 - [ ] Investigar y implementar las funciones de Javascript necesarias 

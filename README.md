@@ -23,3 +23,6 @@
 
 # Consigna general
 
+- Diseño Responsivo
+- Datos llamados por una API
+- Publicado en la web
