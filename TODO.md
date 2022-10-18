@@ -14,6 +14,7 @@
 - [x] Definir cual sera el proyecto 
 - [x] Definir que API usaremos para la pagina 
 - [x] Definir que funcionalidades queremos para la pagina 
+- [x] Verificar el funcionamiento de Netlify para la puesta en produccion de la pagina
 
 
 
