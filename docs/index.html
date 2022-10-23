@@ -12,15 +12,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- LINK - js custom -->
   <script defer src="js/main.js"></script>
+  <!-- LINK -Jquery -->
+  <script defer src="js/jQuery.js"></script>
 </head>
 
 <body>
+  
+  
+  <!-- Optional: Place to the bottom of scripts -->
+  <script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+  
+  </script>
+
     <div class="container-fluid m-4 shadow-lg p-5">
         <h1 class="m-4">Ver detalles de la pelicula</h1>
-        <button class="btn btn-primary" onclick="cargarMasMovi()">cargar otra pelicula</button>
+        <button class="btn btn-primary" onclick="MoreMovi()">cargar otra pelicula</button>
         <div class="container card p-4" id="conteienerMovi"></div>
         <h1 class="m-4">Ver detalles de la Tv</h1>
-        <button class="btn btn-primary" onclick="cargarMasTV()">cargar otra Tv</button>
+        <button class="btn btn-primary" onclick="MoreTV()">cargar otra Tv</button>
         <div class="container card p-4" id="conteienerTV"></div>
     </div>
 </body>
