@@ -2,8 +2,18 @@
   <a href="" rel="noopener">
  <img width=680px height=200px src="https://imgur.com/Bbz3O1L.png" alt="Project logo"></a>
 </p>
+  <div align="center">
+  
+ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+ ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+ ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+ ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
+ <a href='https://www.themoviedb.org/' target="_blank"><img alt='The Movie Database' src='https://img.shields.io/badge/The_Movie Database-100000?style=for-the-badge&logo=The Movie Database&logoColor=FFFFFF&labelColor=1A0F59&color=1A0F59'/></a>
 
-</p>
+</div>
+
+
 <h1 align="center"> Movie App con API de TMDB</h1>
 
 </p>
@@ -11,22 +21,6 @@
 # Intro
 
 - Aplicacion de peliculas desarrollada para la materia de Plataformas Moviles
-
-
-# Codigo
-
- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
- ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
- ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-# Recursos
-
- <a href='https://www.themoviedb.org/' target="_blank"><img alt='The Movie Database' src='https://img.shields.io/badge/The_Movie Database-100000?style=for-the-badge&logo=The Movie Database&logoColor=FFFFFF&labelColor=1A0F59&color=1A0F59'/></a>
-
-
-
 
 # Consigna general
 
