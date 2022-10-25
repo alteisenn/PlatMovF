@@ -39,10 +39,14 @@ Fecha: 7/11/22 (Cambiante)
 <table>
   <tbody>
   <tr>
- <td align="center"><a href="https://github.com/lincNx"><img src="https://avatars.githubusercontent.com/u/56304084?v=4?s=100" width="100px;" alt="Lucas Santacruz"/><br /><sub><b>Santacruz Lucas</b></sub></a><br /><a href="#infra-lukepistrol" title="Infraestructura (Hosting, Herramientas, etc)">🚇</a> <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=lukepistrol" title="Tests">⚠️</a> <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=lukepistrol" title="Documentacion">📚</a></td>  
+    
+ <td align="center"><a href="https://github.com/lincNx"><img src="https://avatars.githubusercontent.com/u/56304084?v=4?s=100" width="100px;" alt="Lucas Santacruz"/><br /><sub><b>Santacruz Lucas</b></sub></a><br /><a href="#infra-lukepistrol" title="Infraestructura (Hosting, Herramientas, etc)">🚇</a>  <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=MarcoCarnevali" title="Programacion">💻</a> <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=lukepistrol" title="Documentacion">📚</a></td>  
         
   <td align="center"><a href="https://github.com/Elmuri"><img src="https://avatars.githubusercontent.com/u/101751763?v=4?s=100" width="100px;" alt="Marco Carnevali"/><br /><sub><b>Correia Marcos</b></sub></a><br /><a href="#infra-MarcoCarnevali" title="Infraestructura (Hosting, Herramientas, etc)">🚇</a> <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=MarcoCarnevali" title="Tests">⚠️</a> <a href="https://github.com/CodeEditApp/CodeEdit/commits?author=MarcoCarnevali" title="Programacion">💻</a></td>   
-        </tr>
+    
+  <td align="center"><a href="https://github.com/tehuel"><img src="https://avatars.githubusercontent.com/u/1787206?v=4?s=100" width="100px;" alt="Marco Carnevali"/><br /><sub><b>Tehuel Torres Baldi</b></sub></a><br/><a href="" title="Profesor">👨‍🏫 </td>   
+    
+   
   </tbody>
 </table>
 </div>
