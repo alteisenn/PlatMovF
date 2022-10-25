@@ -3,8 +3,10 @@
  <img width=680px height=200px src="https://imgur.com/Bbz3O1L.png" alt="Project logo"></a>
 </p>
 
+</p>
+<h1 align="center"> Movie App con API de TMDB</h1>
 
-# Movie App con API de TMDB
+</p>
 
 ## Intro
 
