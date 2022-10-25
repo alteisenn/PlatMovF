@@ -33,7 +33,9 @@
 Fecha: 7/11/22 (Cambiante)
 
 
-# Equipo
+<h1 align="center">Equipo</h1>
+
+ <div align="center">
 <table>
   <tbody>
   <tr>
@@ -43,3 +45,4 @@ Fecha: 7/11/22 (Cambiante)
         </tr>
   </tbody>
 </table>
+</div>
