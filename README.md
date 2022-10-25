@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=680px height=200px src="https://imgur.com/Bbz3O1L.png" alt="Project logo"></a>
+</p>
 
 
 # Movie App con API de TMDB
