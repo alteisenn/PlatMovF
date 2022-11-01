@@ -2,8 +2,6 @@
 
 ## Tareas por realizar
 ❔ Planificar y dividir las tareas 
-- [ ] Crear la estructura HTML de la pagina
-- [ ] Crear la estructura del CSS de la pagina
 - [ ] Investigar y implementar las funciones de Javascript necesarias 
 - [ ] Documentar el proyecto
 
@@ -15,7 +13,8 @@
 - [x] Verificar el funcionamiento de Netlify para la puesta en produccion de la pagina
 - [x] Investigar sobre el funcionamiento de la TMDB API
 - [x] Corroborar que la API servira para el desarrollo de la pagina 
-
+- [x] Crear la estructura HTML de la pagina
+- [x] Crear la estructura del CSS de la pagina
 
 ## Funcionalidades a implementar 
 
