@@ -11,7 +11,7 @@
  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
  <a href='https://www.themoviedb.org/' target="_blank"><img alt='The Movie Database' src='https://img.shields.io/badge/The_Movie Database-100000?style=for-the-badge&logo=The Movie Database&logoColor=FFFFFF&labelColor=1A0F59&color=1A0F59'/></a>
   ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-  ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+ ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 </div>
 
