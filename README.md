@@ -1,3 +1,5 @@
+<h1 align="center"> Movie App con API de TMDB</h1>
+
 <p align="center">
   <a href="" rel="noopener">
  <img width=680px height=200px src="https://imgur.com/Bbz3O1L.png" alt="Project logo"></a>
@@ -16,22 +18,8 @@
 </div>
 
 
-<h1 align="center"> Movie App con API de TMDB</h1>
 
 </p>
-
-# Intro
-
-- Aplicacion de peliculas desarrollada para la materia de Plataformas Moviles
-
-# Consigna general
-
-- Diseño Responsivo
-- Datos llamados por una API
-- Publicado en la web
-
-Fecha: 7/11/22 (Cambiante)
-
 
 <h1 align="center">Equipo</h1>
 
