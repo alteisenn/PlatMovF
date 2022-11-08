@@ -178,12 +178,12 @@ function nextBtn() {
 //FIXME - selectedMovie
 function selectedMovie(movie_id) {
     sessionStorage.setItem('movieId', movie_id);
-    window.location = '../src/moviedetails.html';
+    window.location = '/src/HTML/moviedetails.html';
 }
 //FIXME - selectedTV
 function selectedTV(tv_id) {
     sessionStorage.setItem('TVId', tv_id);
-    window.location = '../src/tvdetails.html';
+    window.location = '/src/HTML/tvdetails.html';
 }
 // NOTE - Obteniendo los detalles de las peliculas
 function getMovieDetails(){
