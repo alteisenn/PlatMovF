@@ -4,7 +4,7 @@ const API_KEY = 'e02bb07d813f5255844c6d19ab9395ab';
 let baseURL = 'https://api.themoviedb.org/3/';
 let imageURL = 'https://image.tmdb.org/t/p/w300';
 let recommImageURL = 'https://image.tmdb.org/t/p/w185';
-
+// NOTE Cuando carge el documento 
 $(document).ready(() => {
     sessionStorage.setItem('type', 'all');
     sessionStorage.setItem('time', 'day');
@@ -65,7 +65,7 @@ function getMovies(searchText, page=1) {
                                 <h4 class="title">${
                                     data["results"][i]["title"]
                                 }</h4>
-                                <div class="rating">${
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${
                                     data["results"][i]["vote_average"]
                                 }</div>
                             </div>
@@ -252,7 +252,7 @@ function getMovieDetails(){
                                 <p><strong>Release Date: </strong>${
                                     details["release_date"]
                                 }</p>
-                                <p><strong>Average Rating: </strong>${
+                                <p><strong>Average Rating: <i class="fa fa-light fa-star" aria-hidden="true"></i> </strong>${
                                     details["vote_average"]
                                 }</p>
                                 <p><strong>Production Country: </strong>${prod_country}</p>
@@ -424,7 +424,7 @@ function showWatchlist() {
 
                             <div class="ratingFlex">
                                 <h4 class="title">${w_title}</h4>
-                                <div class="rating">${w_rating}</div>
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${w_rating}</div>
                             </div>
 
                             <button class="detailsButton btn btn-primary" onclick="removeFromWatched('${w_title}')">Remove</button>
@@ -861,7 +861,7 @@ function showMovieByGenre(genre_id, page=1) {
                                 <h4 class="title">${
                                     discover["results"][i]["title"]
                                 }</h4>
-                                <div class="rating">${
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${
                                     discover["results"][i]["vote_average"]
                                 }</div>
                             </div>
@@ -940,7 +940,7 @@ function showMovieByCategory(category, page=1) {
                                 <h4 class="title">${
                                     cat["results"][i]["title"]
                                 }</h4>
-                                <div class="rating">${
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${
                                     cat["results"][i]["vote_average"]
                                 }</div>
                             </div>
@@ -1038,7 +1038,7 @@ function showMovieByTypeTime(appendType, appendTime, page=1) {
 
                             <div class="ratingFlex">
                                 <h4 class="title">${title}</h4>
-                                <div class="rating">${
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${
                                     trend["results"][i]["vote_average"]
                                 }</div>
                             </div>
@@ -1062,7 +1062,7 @@ function showMovieByTypeTime(appendType, appendTime, page=1) {
 
                             <div class="ratingFlex">
                                 <h4 class="title">${name}</h4>
-                                <div class="rating">${
+                                <div class="rating"><i class="fa fa-light fa-star" aria-hidden="true"></i>${
                                     trend["results"][i]["vote_average"]
                                 }</div>
                             </div>
